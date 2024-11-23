@@ -1,0 +1,86 @@
+/* Reset básico para evitar conflictos con márgenes/paddings predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Diseño de la cabecera con flexbox */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+    background-color: #333;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 30px;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #15ff00;
+}
+
+/* Hero section: usa Grid */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 40px;
+    align-items: center;
+    background-color: #e0f7fa;
+}
+
+.hero-text {
+    padding: 20px;
+    font-size: 40px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+/* Sección de características de la propiedad usando Flexbox */
+.features {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.feature {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Estilos para el footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #48ff00;
+}
+.logo img {
+    width: 150px;
+    height: auto;
+}
